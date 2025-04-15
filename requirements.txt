@@ -1,0 +1,3 @@
+# Go uses go.mod for dependencies
+# This file is for reference only
+go 1.21
