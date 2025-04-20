@@ -4,7 +4,9 @@ WORKDIR /app
 
 COPY . .
 
-RUN go build -o main .
+# Initialize Go module and build
+RUN go mod init ghaymah-go-starter && \
+    go build -o main .
 
 EXPOSE 8080
 
